@@ -9,6 +9,11 @@ public class Move : MonoBehaviour
     private Vector3 movement;
     private void Update()
     {
+        MoveThePlayer();
+    }
+
+    private void MoveThePlayer()
+    {
         float x = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         float z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
