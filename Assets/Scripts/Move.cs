@@ -5,8 +5,13 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] Rigidbody rigidbody;
+
+    private Rigidbody rigidbody;
     private Vector3 movement;
+    private void Start()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+    }
     private void Update()
     {
         MoveThePlayer();
