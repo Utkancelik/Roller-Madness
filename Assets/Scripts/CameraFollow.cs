@@ -23,11 +23,15 @@ public class CameraFollow : MonoBehaviour
     #endregion
     private void FixedUpdate()
     {
-        MoveTheCamera();
+        if (target != null)
+        {
+            MoveTheCamera();
+        }
     }
 
     private void MoveTheCamera()
     {
+
         Vector3 targetToMove = offsetVector + target.position;
         transform.position = Vector3.Lerp(transform.position, targetToMove, cameraFollowSpeed * Time.fixedDeltaTime);
         transform.LookAt(target.transform.position);
