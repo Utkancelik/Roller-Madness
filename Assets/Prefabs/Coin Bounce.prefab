@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2219278879446188903}
   m_Layer: 0
   m_Name: Coin Bounce
-  m_TagString: Untagged
+  m_TagString: Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
