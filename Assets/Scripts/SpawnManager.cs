@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private Transform[] spawnPositions;
     private void Update()
     {
-        if (Time.time > nextSpawnTime)
+        if (Time.timeSinceLevelLoad > nextSpawnTime)
         {
             nextSpawnTime += spawnRate;
             SpawnObejct(objects[RandomObjectNumber()], spawnPositions[RandomSpawnNumber()]);
