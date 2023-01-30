@@ -12,7 +12,10 @@ public class TimeManager : MonoBehaviour
     public bool gameOver = false;
     private void Update()
     {
-        UpdateTimer();
+        if (!gameFinished && !gameOver)
+        {
+            UpdateTimer();
+        }
 
         if (Time.timeSinceLevelLoad >= levelFinishTime && !gameOver)
         {

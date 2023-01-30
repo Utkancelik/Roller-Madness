@@ -8,13 +8,23 @@ public class Move : MonoBehaviour
 
     private Rigidbody rigidbody;
     private Vector3 movement;
+    private TimeManager timeManager;
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        timeManager = FindObjectOfType<TimeManager>();
     }
     private void Update()
     {
-        MoveThePlayer();
+        if (!timeManager.gameOver && !timeManager.gameFinished)
+        {
+            MoveThePlayer();
+        }
+
+        if (timeManager.gameOver ||timeManager.gameFinished)
+        {
+            rigidbody.isKinematic = true;
+        }
     }
 
     private void MoveThePlayer()
