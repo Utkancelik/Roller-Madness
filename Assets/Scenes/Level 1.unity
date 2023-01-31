@@ -305,6 +305,7 @@ MonoBehaviour:
   timeText: {fileID: 1021575322}
   winPanel: {fileID: 972676679}
   losePanel: {fileID: 1496489505}
+  destroyAfterGame: []
   gameFinished: 0
   gameOver: 0
 --- !u!1 &311187157
@@ -1821,7 +1822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128427742102548775, guid: 8f9bee7e47d64fc4e8910c121c6cf760, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4128427742102548775, guid: 8f9bee7e47d64fc4e8910c121c6cf760, type: 3}
       propertyPath: m_LocalPosition.y
