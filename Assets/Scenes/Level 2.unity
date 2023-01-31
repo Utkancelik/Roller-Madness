@@ -305,6 +305,7 @@ MonoBehaviour:
   timeText: {fileID: 1021575322}
   winPanel: {fileID: 972676679}
   losePanel: {fileID: 1496489505}
+  destroyAfterGame: []
   gameFinished: 0
   gameOver: 0
 --- !u!1001 &184502556
@@ -956,7 +957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915670044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.0699997, y: 3.92, z: -4.25}
+  m_LocalPosition: {x: -4.0699997, y: 3.92, z: 0.099999905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1041,7 +1042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 7, z: -5}
+  m_LocalPosition: {x: 0, y: 7, z: -11.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1705,7 +1706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010829079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4300003, y: 3.92, z: -4}
+  m_LocalPosition: {x: 4.64, y: 3.92, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1870,7 +1871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112048692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.069999695, y: 3.92, z: 0.5}
+  m_LocalPosition: {x: -0.069999695, y: 3.92, z: 5.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1902,7 +1903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4128427742102548775, guid: 8f9bee7e47d64fc4e8910c121c6cf760, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.32000005
+      value: -7.34
       objectReference: {fileID: 0}
     - target: {fileID: 4128427742102548775, guid: 8f9bee7e47d64fc4e8910c121c6cf760, type: 3}
       propertyPath: m_LocalRotation.w

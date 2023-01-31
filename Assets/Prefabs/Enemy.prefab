@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   stopDistance: 1
+  enemyExplosionEffect: {fileID: 5657730322639758095, guid: ab7c30bf0c7ba4a4dbfa7571dfb48a87, type: 3}
 --- !u!96 &4137036736196477033
 TrailRenderer:
   serializedVersion: 2

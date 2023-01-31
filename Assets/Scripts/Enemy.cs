@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 5.0f, stopDistance = 3.0f;
+    [SerializeField] private GameObject enemyExplosionEffect;
 
     private Transform target;
     private void Start()
@@ -33,5 +34,10 @@ public class Enemy : MonoBehaviour
             timeManager.gameOver = true;
             Destroy(collision.gameObject);  
         }
+    }
+
+    private void OnDisable()
+    {
+        Instantiate(enemyExplosionEffect,transform.position, Quaternion.identity);
     }
 }

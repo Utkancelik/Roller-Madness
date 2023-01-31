@@ -5,6 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private GameObject playerDeadEffect;
 
     private Rigidbody rigidbody;
     private Vector3 movement;
@@ -36,4 +37,8 @@ public class Move : MonoBehaviour
         rigidbody.AddForce(movement * speed * Time.deltaTime);
     }
 
+    private void OnDisable()
+    {
+        Instantiate(playerDeadEffect, transform.position , Quaternion.identity);
+    }
 }
